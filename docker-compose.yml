@@ -5,4 +5,4 @@ services:
     image: huangyingw/tftpd
     network_mode: "host"
     volumes:
-      - ./var/lib/tftpboot/:/var/lib/tftpboot/
+      - ./netboot/ubuntu/xenial/:/var/lib/tftpboot/
