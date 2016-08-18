@@ -1,9 +1,8 @@
 version: '2'
 services:
   tftpd:
-    build: ./5.7/
+    build: .
     image: huangyingw/tftpd
     network_mode: "host"
-    env_file: .env
     volumes:
-      - ./var/log/:/var/log/
+      - ./var/lib/tftpboot/:/var/lib/tftpboot/
