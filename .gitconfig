@@ -1,0 +1,11 @@
+[remote "origin"]
+	url = git@github.com:drerik/docker-tftpd.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "github"]
+	url = git@github.com:huangyingw/docker-tftpd.git
+	fetch = +refs/heads/*:refs/remotes/github/*
+[push]
+    remote = github
+[gsync]
+    remote = origin
+    branch = master
